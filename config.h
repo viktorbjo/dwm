@@ -98,6 +98,7 @@ static const Key keys[] = {
 	{ 0,            XF86XK_MonBrightnessUp,    spawn,          SHCMD(" brightnessctl set +10%")  },
 	{ 0,            XF86XK_MonBrightnessDown,  spawn,          SHCMD(" brightnessctl set 10%-") },
         { MODKEY|ShiftMask,             XK_n, spawn,               {.v = (const char*[]){ "st", "-e", "newsboat", NULL } } },
+        { MODKEY,                       XK_r, spawn,               {.v = (const char*[]){ "st", "-e", "ranger", NULL } } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
